@@ -1,22 +1,460 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel ="stylesheet" href="headfoot.css">
         <link rel ="icon" type="image/x-icon" href="assets/favicon.jpg">
-        <title>Nissan GTR </title>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-
+        <title>Nissan GTR </title>     
     </head>
-    <body>
-      
-    </body>
 
+    <body> 
+        <!-- HEADER -->
+         <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <h1>NISSAN SKYLINE GTR R-34</h1>
+                    </div>
 
+                    <nav class="nav-desktop">
+                        <a href="#performance">Performance</a>
+                         <a href="#specifications">Specifications</a>
+                    <a href="#heritage">Heritage</a>
+                    <a href="#gallery">Gallery</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <sline x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </button>
+                    </nav>
+ <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
 
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#performance" class="mobile-menu-link">Performance</a>
+                <a href="#specifications" class="mobile-menu-link">Specifications</a>
+                <a href="#heritage" class="mobile-menu-link">Heritage</a>
+                <a href="#gallery" class="mobile-menu-link">Gallery</a>
+                <div class="mobile-theme-toggle">
+                    <button class="theme-toggle mobile" id="mobileThemeToggle">
+                        <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <span class="theme-label">Dark Mode</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="assets/cara.jpg" alt="Nissan GTR" />
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                SKYLINE <span class="hero-highlight">GT-R R34</span>
+            </h1>
+            <p class="hero-subtitle">
+                The Legend of Japanese Performance
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="stat-value">2.6L</div>
+                    <div class="stat-label">RB26DETT</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-value">276HP</div>
+                    <div class="stat-label">Stock Power</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-value">4.8s</div>
+                    <div class="stat-label">0-60 MPH</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-value">ATTESA</div>
+                    <div class="stat-label">E-TS AWD</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section id="performance" class="performance-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>LEGENDARY <span class="text-highlight">PERFORMANCE</span></h2>
+                <p>The R34 GT-R established the blueprint for Japanese sports car excellence</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <div class="stat-icon">
+                        <div class="icon-inner"></div>
+                    </div>
+                    <div class="stat-details">
+                        <div class="stat-number">165 MPH</div>
+                        <div class="stat-title">Top Speed</div>
+                        <div class="stat-description">Electronically limited</div>
+                    </div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-icon">
+                        <div class="icon-inner"></div>
+                    </div>
+                    <div class="stat-details">
+                        <div class="stat-number">13.1s</div>
+                        <div class="stat-title">Quarter Mile</div>
+                        <div class="stat-description">Stock performance</div>
+                    </div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-icon">
+                        <div class="icon-inner"></div>
+                    </div>
+                    <div class="stat-details">
+                        <div class="stat-number">276HP</div>
+                        <div class="stat-title">RB26DETT</div>
+                        <div class="stat-description">Legendary inline-6</div>
+                    </div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-icon">
+                        <div class="icon-inner"></div>
+                    </div>
+                    <div class="stat-details">
+                        <div class="stat-number">3,439 lbs</div>
+                        <div class="stat-title">Weight</div>
+                        <div class="stat-description">Balanced chassis</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="content-image fade-in-left">
+                    <img src="https://images.unsplash.com/photo-1605559911160-a3d95d213904?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="GT-R Engine Bay" />
+                </div>
+                
+                <div class="content-text fade-in-right">
+                    <h3>Engineered for Precision</h3>
+                    <p>
+                        The RB26DETT engine represents the pinnacle of Japanese engineering. This twin-turbocharged 
+                        2.6-liter inline-6 produces 276 horsepower in stock form, but its robust design allows for 
+                        incredible tuning potential.
+                    </p>
+                    <p>
+                        Combined with the advanced ATTESA E-TS all-wheel-drive system, the R34 GT-R delivers 
+                        exceptional traction and control in all conditions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specifications" class="specifications-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>TECHNICAL <span class="text-highlight">SPECIFICATIONS</span></h2>
+                <p>Engineering excellence in every detail</p>
+            </div>
+
+            <div class="specs-grid">
+                <div class="spec-card fade-in">
+                    <h3>Engine</h3>
+                    <div class="spec-list">
+                        <div class="spec-item">
+                            <div class="spec-label">Type</div>
+                            <div class="spec-value">2.6L I6 Twin-Turbo</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Code</div>
+                            <div class="spec-value">RB26DETT</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Horsepower</div>
+                            <div class="spec-value">276 HP @ 6,800 RPM</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Torque</div>
+                            <div class="spec-value">289 lb-ft @ 4,400 RPM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card fade-in">
+                    <h3>Performance</h3>
+                    <div class="spec-list">
+                        <div class="spec-item">
+                            <div class="spec-label">0-60 MPH</div>
+                            <div class="spec-value">4.8 seconds</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Quarter Mile</div>
+                            <div class="spec-value">13.1 seconds</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Top Speed</div>
+                            <div class="spec-value">165 MPH (limited)</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Power/Weight</div>
+                            <div class="spec-value">12.5 lbs/hp</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card fade-in">
+                    <h3>Drivetrain</h3>
+                    <div class="spec-list">
+                        <div class="spec-item">
+                            <div class="spec-label">Transmission</div>
+                            <div class="spec-value">6-Speed Manual</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Drive Type</div>
+                            <div class="spec-value">ATTESA E-TS AWD</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Differential</div>
+                            <div class="spec-value">Active LSD</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Torque Split</div>
+                            <div class="spec-value">0-50% Front</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card fade-in">
+                    <h3>Dimensions</h3>
+                    <div class="spec-list">
+                        <div class="spec-item">
+                            <div class="spec-label">Length</div>
+                            <div class="spec-value">183.5 inches</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Width</div>
+                            <div class="spec-value">69.7 inches</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Height</div>
+                            <div class="spec-value">53.9 inches</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Curb Weight</div>
+                            <div class="spec-value">3,439 lbs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section id="heritage" class="heritage-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>R34 <span class="text-highlight">LEGACY</span></h2>
+                <p>The final chapter of the classic GT-R era (1999-2002)</p>
+            </div>
+
+            <div class="content-grid heritage-grid">
+                <div class="content-text fade-in-left">
+                    <h3>The Final Classic</h3>
+                    <p>
+                        The R34 GT-R represents the pinnacle of the classic Skyline GT-R lineage. With its 
+                        refined RB26DETT engine, advanced ATTESA E-TS AWD system, and iconic design, it became 
+                        the most sought-after Japanese sports car.
+                    </p>
+                    <p>
+                        Featured in countless movies and video games, the R34 achieved legendary status that 
+                        transcends automotive enthusiasts, becoming a cultural icon worldwide.
+                    </p>
+                </div>
+                
+                <div class="content-image fade-in-right">
+                    <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Heritage GT-R" />
+                </div>
+            </div>
+
+            <div class="milestones-grid">
+                <div class="milestone-card fade-in">
+                    <div class="milestone-icon">
+                        <span>99</span>
+                    </div>
+                    <div class="milestone-year">1999</div>
+                    <h4>R34 Launch</h4>
+                    <p>The most advanced Skyline GT-R with refined RB26DETT</p>
+                </div>
+                <div class="milestone-card fade-in">
+                    <div class="milestone-icon">
+                        <span>00</span>
+                    </div>
+                    <div class="milestone-year">2000</div>
+                    <h4>V-Spec II</h4>
+                    <p>Enhanced aerodynamics and carbon fiber hood</p>
+                </div>
+                <div class="milestone-card fade-in">
+                    <div class="milestone-icon">
+                        <span>01</span>
+                    </div>
+                    <div class="milestone-year">2001</div>
+                    <h4>M-Spec Nür</h4>
+                    <p>Limited edition honoring Nürburgring achievements</p>
+                </div>
+                <div class="milestone-card fade-in">
+                    <div class="milestone-icon">
+                        <span>02</span>
+                    </div>
+                    <div class="milestone-year">2002</div>
+                    <h4>Final Edition</h4>
+                    <p>End of production, becoming an instant legend</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>VISUAL <span class="text-highlight">GALLERY</span></h2>
+                <p>Experience the R34 GT-R from every angle</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1605559911160-a3d95d213904?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="GT-R Front View" />
+                    <div class="gallery-overlay">
+                        <h3>Aggressive Stance</h3>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="GT-R Side Profile" />
+                    <div class="gallery-overlay">
+                        <h3>Iconic Profile</h3>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="GT-R Interior" />
+                    <div class="gallery-overlay">
+                        <h3>Driver Focused</h3>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="GT-R Engine" />
+                    <div class="gallery-overlay">
+                        <h3>RB26DETT Power</h3>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="GT-R Track" />
+                    <div class="gallery-overlay">
+                        <h3>Track Ready</h3>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="GT-R Details" />
+                    <div class="gallery-overlay">
+                        <h3>Precision Details</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>NISSAN SKYLINE GT-R R34</h3>
+                    <p>
+                        The legendary final chapter of the classic GT-R era. A perfect blend of 
+                        performance, heritage, and Japanese engineering excellence.
+                    </p>
+                    <div class="footer-note">
+                        * Performance figures represent stock specifications and may vary based on conditions.
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="#heritage">Heritage</a></li>
+                        <li><a href="#specifications">Specifications</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#performance">Performance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Owners Guide</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Parts</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2024 Nissan Motor Corporation. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
